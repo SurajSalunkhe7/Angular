@@ -1,0 +1,16 @@
+<h1>Inside Data Binding Component</h1>
+
+<h1>Two Way Data Binding Without Insink</h1>
+
+<input type="text" #Mydata>
+
+<button (click)="SendData(Mydata.value)">Press</button>
+
+<h1>{{Str}}</h1>
+
+
+<h1>Two Way Data Binding Using Insink</h1>
+
+<input [(ngModel)]="Data" type="text">
+
+<h1>Data From Ts To Html is : {{Data}}</h1>

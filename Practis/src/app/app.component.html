@@ -1,0 +1,51 @@
+<h1>My Name is : {{Name}}</h1>
+
+<app-first></app-first>
+
+<app-menu></app-menu>
+
+
+<h1>**********************************************************************************************</h1>
+<h1 [style.color]="'red'" [style.margin-left]="'40%'">Revistion Section</h1>
+
+<app-event-binding-demo></app-event-binding-demo>
+
+<app-stylebindingdemo></app-stylebindingdemo>
+
+<app-classbindingdemo></app-classbindingdemo>
+
+<app-ngfordemo></app-ngfordemo>
+
+<app-binding></app-binding>
+
+<app-directive-x></app-directive-x>
+
+<app-parent></app-parent>
+
+<app-parent1></app-parent1>
+
+<app-databinding></app-databinding>
+
+<app-structuraldirective></app-structuraldirective>
+
+<h1>Inside Parent Component</h1>
+
+<input type="text" #Data>
+<button (click)="SendData(Data.value)">Send Data</button>
+
+
+<app-child2 [Data]="Message"></app-child2>
+
+<h1>Inside Parent Component</h1>
+
+<!-- <app-child3 (Myevent) ="Data1 = $even"></app-child3> -->
+
+<!-- <h1>Mesage From Child Component is : {{Data}}</h1> -->
+
+<app-two-way></app-two-way>
+
+<app-parent4></app-parent4>
+
+<app-parent5></app-parent5>
+
+<app-data-binding></app-data-binding>

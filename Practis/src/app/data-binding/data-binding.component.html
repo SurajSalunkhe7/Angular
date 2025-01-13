@@ -1,0 +1,9 @@
+<h1>Two Way Data Binding Withot Insink</h1>
+
+<input type="text" #data>
+<button (click)="SendData(data.value)">Press</button>
+<h1>{{Data}}</h1>
+
+
+<input type="text" [(ngModel)]="Message">
+<h1>{{Message}}</h1>

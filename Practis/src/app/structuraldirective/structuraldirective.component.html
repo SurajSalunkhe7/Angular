@@ -1,0 +1,30 @@
+<h1>Ng For Demo</h1>
+
+<div *ngFor = "let Value Of Arr">
+    <h3>{{Value.Name}} {{Value.Age}} {{Value.Hight}}</h3>
+</div>
+
+<h1 *ngIf="Str">Ng IF Demo</h1>
+
+<ng-template #Veg>
+    <h2>PAnir</h2>
+    <h2>Panir Tika</h2>
+    <h2>Panir Labab</h2>
+</ng-template>
+
+<ng-template #NonVeg>
+    <h2>Chicken</h2>
+    <h2>Chicken Tika</h2>
+    <h2>Chicken Labab</h2>
+</ng-template>
+
+<h1 *ngIf="Str; then Veg; else NonVeg"></h1>
+
+<h1>Ng Switch</h1>
+
+<div [ngSwitch]="Batch">
+    <div *ngSwitchCase="'PPA'">You Are Selected PPA Batch</div>
+    <div *ngSwitchCase="'LB'">You Are Selected PPA Batch</div>
+    <div *ngSwitchCase="'Angular'">You Are Selected PPA Batch</div>
+    <div *ngSwitchDefault>There is no such a batch</div>
+</div>

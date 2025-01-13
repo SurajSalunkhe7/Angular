@@ -1,0 +1,31 @@
+<h1>Inside Structural Directives</h1>
+
+<h1>1. ng For</h1>
+
+<div *ngFor="let Value of Arr; index as i">
+    <h2>{{i}} : {{Value}}</h2>
+</div>
+
+<h1 *ngIf="flag">2. ng If</h1>
+
+<ng-template #veg>
+    <h1>You Consider Veg Food Menu</h1>
+</ng-template>
+
+
+<ng-template #Nonveg>
+    <h1>You Consider Non-Veg Food Menu</h1>
+</ng-template>
+
+
+<h2 *ngIf="Menu;then veg;else Nonveg"> Pless Consider Food Menu</h2>
+
+<h1>3. ng Switch</h1>
+
+<div [ngSwitch]="Batch">
+    <h1 *ngSwitchCase="'PPA'">You Are Selected PPA Batch</h1>
+    <h1 *ngSwitchCase="'LB'">You Are Selected LB Batch</h1>
+    <h1 *ngSwitchCase="'Angular'">You Are Selected Angular Batch</h1>
+    <h1 *ngSwitchCase="'LSP'">You Are Selected LSP Batch</h1>
+    <h1 *ngSwitchDefault>There is No Such A Batch</h1>
+</div>

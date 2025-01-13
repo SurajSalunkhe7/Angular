@@ -1,0 +1,14 @@
+<h1>Please Seclect Your Faverite Food Menu</h1>
+
+
+
+<button (click)="Veg()">Veg</button>
+
+ <div *ngFor="let value Of VegMenu">
+    <h2 style="color: green;">{{value}}</h2>
+ </div>
+
+<button (click)="NonVeg()">Non-Veg</button>
+<div *ngFor="let value Of NonVegMenu">
+    <h2 style="color: red;">{{value}}</h2>
+ </div>
